@@ -1,0 +1,69 @@
+.circle{
+    height: 200px;
+    width: 200px;
+    border: 25px solid red;
+    margin: 0 auto;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: circle 2s infinite forwards;
+}
+
+@keyframes circle {
+    0% {border-color: red; transform: scale(1); }
+    25% {border-color: rgb(4, 0, 255); transform: scale(1.1); }
+    50% {border-color: rgb(0, 255, 106); scale: (1.3); }
+    75% {border-color: rgb(255, 251, 0); scale: (1.1); }
+    100% {border-color: rgb(255, 0, 179); transform: scale(1); }
+}
+body{
+    background: #D0E4F5 url("https://images.wallpapersden.com/image/download/color-palette-abstract-4k_a2lsa2uUmZqaraWkpJRmbmdlrWZlbWU.jpg") no-repeat scroll 0px 0px;
+}
+
+.square{
+    width: 25px;
+    height: 25px;
+    border: 5px solid white;
+    animation: square 2s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes square{
+    0% {transform: rotate(0deg);}
+    25% {border-color: aqua; border-width: 10px;}
+    50% {border-color: rgb(255, 0, 0); border-width: 20px;}
+    75% {border-color: rgb(229, 255, 0); border-width: 40px;}
+    100% {transform: rotate(360deg); border-width: 5px;}
+}
+.icons{
+    font-size: 250%;
+    margin-left: 880px;
+    margin-top: 5%;
+    padding: 0%;
+}
+
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    background-color: solid black;
+}
+.progress-bar{
+    height: 4px;
+    border-radius: 50px;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+.progress{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    border-radius: 50px;
+    background-color: solid black;
+}
+span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
