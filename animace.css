@@ -49,6 +49,104 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-left: 0%;
+    height: 7rem;
+    padding: var(--padding);
+    color: var(--primary-color);
+}
+i{
+    color: var(--secondary-color);
+}
+i:hover{
+    color: var(--primary-color);
+}
+.song-bar {
+    position: absolute;
+    left: var(--padding);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 10%;
+}
+
+.progress-controller{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    color: var(--secondary-color);
+}
+.control-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.play-pause{
+    display: inline-block;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: #111;
+    border-radius: 50%;
+}
+.play-pause:hover{
+    transform: scale(1.1);
+    color: #111;
+}
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.progress-bar{
+    height: 4px;
+    border-radius: 50px;
+    width: 30%;
+    background-color: #ccc4;
+}
+.progress{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+.progress-bar:hover .progress{
+    background-color: var(--green-color);
+}
+.progress-bar:hover .progress::after{
+    content: "";
+    position: absolute;
+    --size: 1em;
+    width: var(--size);
+    height: var(--size);
+    right: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transform: translate(50%, calc(2px - 50%));
+}
+    75% {border-color: rgb(229, 255, 0); border-width: 40px;}
+    100% {transform: rotate(360deg); border-width: 5px;}
+}
+body {
+    font-size: 14px;
+}
+
+.music-player {
+    --primary-color: #ddd;
+    --secondary-color: #999;
+    --green-color: #2d5;
+    --padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     margin-left: 41.7%;
     height: 7rem;
     padding: var(--padding);
